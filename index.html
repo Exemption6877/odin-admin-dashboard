@@ -3,107 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
     <title>Bitter</title>
   </head>
   <body>
     <div class="dashboard">
+      <div class="logo">
+        <img src="./img/placeholder.svg" alt="logo" />
+        <h1>Dashboard</h1>
+      </div>
       <ul>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Messages</a></li>
+        <li><a href="">History</a></li>
+        <li><a href="">Tasks</a></li>
+        <li><a href="">Communities</a></li>
       </ul>
       <ul>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+        <li><a href="">Settings</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Privacy</a></li>
       </ul>
     </div>
 
     <div class="top-bar">
-      <div class="search-bar">
-        <img src="" alt="Notification" />
-        <img src="" alt="PFP" />
-        <h3>username</h3>
-        <div class="action-bar">
-          <img src="" alt="" />
-          <div class="greeting">
-            <p>Hi there</p>
-            <h3>username</h3>
-            <h3>nickname</h3>
-          </div>
+      <img src="./img/placeholder.svg" alt="search-button" />
+      <form action="GET"><input type="text" placeholder="Search" /></form>
+      <img src="./img/placeholder.svg" alt="Notification" />
+      <img src="./img/placeholder.svg" alt="PFP" />
+      <h3>username</h3>
+
+      <img src="./img/placeholder.svg" alt="PFP" />
+      <div class="greeting">
+        <h4>Hi there,</h4>
+        <h2>username <span>nickname</span></h2>
+      </div>
+
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
+    </div>
+
+    <div class="post container">
+      <h3>Your Projects</h3>
+      <div class="posts">
+        <div class="entry">
+          <h2>Name 1</h2>
+          <p>Description 1</p>
           <ul>
-            <li><button>New</button></li>
-            <li><button>Upload</button></li>
-            <li><button>Share</button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h2>Name 2</h2>
+          <p>Description 2</p>
+          <ul>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h2>Name 3</h2>
+          <p>Description 3</p>
+          <ul>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h2>Name 4</h2>
+          <p>Description 4</p>
+          <ul>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h2>Name 5</h2>
+          <p>Description 5</p>
+          <ul>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h2>Name 6</h2>
+          <p>Description 6</p>
+          <ul>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="posts">
-      <h3>Your Projects</h3>
-      <div class="entry">
-        <h2>Name 1</h2>
-        <p>Description 1</p>
-        <ul>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-        </ul>
-      </div>
-      <div class="entry">
-        <h2>Name 2</h2>
-        <p>Description 2</p>
-        <ul>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-        </ul>
-      </div>
-      <div class="entry">
-        <h2>Name 3</h2>
-        <p>Description 3</p>
-        <ul>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-        </ul>
-      </div>
-      <div class="entry">
-        <h2>Name 4</h2>
-        <p>Description 4</p>
-        <ul>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-        </ul>
-      </div>
-      <div class="entry">
-        <h2>Name 5</h2>
-        <p>Description 5</p>
-        <ul>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-        </ul>
-      </div>
-      <div class="entry">
-        <h2>Name 6</h2>
-        <p>Description 6</p>
-        <ul>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="announcements">
+    <div class="announce container">
       <h3>Announcements</h3>
-      <div class="block">
+      <div class="announcements">
         <div class="bullet">
           <h2>Name 1</h2>
           <p>Description 1</p>
@@ -119,25 +123,25 @@
       </div>
     </div>
 
-    <div class="trending">
+    <div class="trend container">
       <h3>Trending</h3>
-      <div class="block">
-        <img src="" alt="pfp" />
+      <div class="trending">
+        <img src="./img/placeholder.svg" alt="pfp" />
         <div class="user">
           <h4>nickname 1</h4>
           <p>user status</p>
         </div>
-        <img src="" alt="pfp" />
+        <img src="./img/placeholder.svg" alt="pfp" />
         <div class="user">
           <h4>nickname 2</h4>
           <p>user status</p>
         </div>
-        <img src="" alt="pfp" />
+        <img src="./img/placeholder.svg" alt="pfp" />
         <div class="user">
           <h4>nickname 3</h4>
           <p>user status</p>
         </div>
-        <img src="" alt="pfp" />
+        <img src="./img/placeholder.svg" alt="pfp" />
         <div class="user">
           <h4>nickname 4</h4>
           <p>user status</p>
