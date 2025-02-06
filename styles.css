@@ -21,7 +21,7 @@ ul {
 body {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 0.5fr, repeat(3, 3fr);
+  grid-template-rows: 0.5fr 1;
   background-color: var(--bg-color);
 }
 
@@ -32,14 +32,13 @@ body {
 
 .dashboard {
   background-color: var(--main-color);
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row: span 3;
   border: 1px solid black;
 }
 
 .top-bar {
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column: span 2;
   border: 1px solid black;
   padding-top: 1rem;
   padding-left: 3rem;
@@ -69,16 +68,14 @@ img {
 }
 
 .post {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  background-color: #f0b429;
+  grid-row: span 2;
 }
 
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto-fit);
   gap: 1rem;
 }
 
@@ -88,24 +85,19 @@ img {
 }
 
 .entry {
-  height: 25vh;
+  height: 250px;
   background-color: var(--secondary-color);
 }
 
-.announce {
-  grid-column-start: 3;
-  grid-row: 2;
+.sidebar {
+  grid-column: 3;
+  grid-row: span 2;
 }
 
 .announcements {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   background-color: var(--secondary-color);
-}
-
-.trend {
-  grid-column-start: 3;
-  grid-row: 3;
 }
 
 .trending {
