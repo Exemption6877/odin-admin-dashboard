@@ -7,35 +7,46 @@
     <title>Bitter</title>
   </head>
   <body>
-    <div class="dashboard">
-      <div class="logo">
-        <img src="./img/placeholder.svg" alt="logo" />
-        <h1>Dashboard</h1>
+    <div class="sidebar-left">
+      <div class="sidebar-header">
+        <img src="./img/placeholder.svg" alt="sidebar-header" />
+        <h1>sidebar-left</h1>
       </div>
-      <ul>
+      <ul class="nav-menu">
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Home</a></li>
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Profile</a></li>
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Messages</a></li>
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">History</a></li>
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Tasks</a></li>
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Communities</a></li>
       </ul>
-      <ul>
+      <ul class="nav-footer">
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Settings</a></li>
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Support</a></li>
+        <img src="./img/placeholder.svg" alt="pfp" />
         <li><a href="">Privacy</a></li>
       </ul>
     </div>
 
-    <div class="top-bar">
+    <div class="top-nav">
       <img src="./img/placeholder.svg" alt="search-button" />
-      <form action="GET"><input type="text" placeholder="Search" /></form>
+      <form action="GET" class="search-bar">
+        <input type="text" placeholder="Search" />
+      </form>
       <img src="./img/placeholder.svg" alt="Notification" />
       <img src="./img/placeholder.svg" alt="PFP" />
       <h3>username</h3>
 
       <img src="./img/placeholder.svg" alt="PFP" />
-      <div class="greeting">
+      <div class="user-info">
         <h4>Hi there,</h4>
         <h2>username <span>nickname</span></h2>
       </div>
@@ -45,107 +56,109 @@
       <button>Share</button>
     </div>
 
-    <div class="post container">
-      <h3>Your Projects</h3>
-      <div class="posts">
-        <div class="entry">
-          <h2>Name 1</h2>
-          <p>Description 1</p>
-          <ul>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h2>Name 2</h2>
-          <p>Description 2</p>
-          <ul>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h2>Name 3</h2>
-          <p>Description 3</p>
-          <ul>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h2>Name 4</h2>
-          <p>Description 4</p>
-          <ul>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h2>Name 5</h2>
-          <p>Description 5</p>
-          <ul>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h2>Name 6</h2>
-          <p>Description 6</p>
-          <ul>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="sidebar">
-      <div class="announce container">
-        <h3>Announcements</h3>
-        <div class="announcements">
-          <div class="bullet">
+    <div class="main-content">
+      <div class="projects container">
+        <h3>Your Projects</h3>
+        <div class="projects-grid">
+          <div class="project-card">
             <h2>Name 1</h2>
             <p>Description 1</p>
+            <ul class="project-actions">
+              <li><button></button></li>
+              <li><button></button></li>
+              <li><button></button></li>
+            </ul>
           </div>
-          <div class="bullet">
+          <div class="project-card">
             <h2>Name 2</h2>
             <p>Description 2</p>
+            <ul class="project-actions">
+              <li><button></button></li>
+              <li><button></button></li>
+              <li><button></button></li>
+            </ul>
           </div>
-          <div class="bullet">
+          <div class="project-card">
             <h2>Name 3</h2>
             <p>Description 3</p>
+            <ul class="project-actions">
+              <li><button></button></li>
+              <li><button></button></li>
+              <li><button></button></li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h2>Name 4</h2>
+            <p>Description 4</p>
+            <ul class="project-actions">
+              <li><button></button></li>
+              <li><button></button></li>
+              <li><button></button></li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h2>Name 5</h2>
+            <p>Description 5</p>
+            <ul class="project-actions">
+              <li><button></button></li>
+              <li><button></button></li>
+              <li><button></button></li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h2>Name 6</h2>
+            <p>Description 6</p>
+            <ul class="project-actions">
+              <li><button></button></li>
+              <li><button></button></li>
+              <li><button></button></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div class="trend container">
-        <h3>Trending</h3>
-        <div class="trending">
-          <img src="./img/placeholder.svg" alt="pfp" />
-          <div class="user">
-            <h4>nickname 1</h4>
-            <p>user status</p>
+      <div class="sidebar-right">
+        <div class="announce container">
+          <h3>Announcements</h3>
+          <div class="announcement-list">
+            <div class="announcement">
+              <h2>Name 1</h2>
+              <p>Description 1</p>
+            </div>
+            <div class="announcement">
+              <h2>Name 2</h2>
+              <p>Description 2</p>
+            </div>
+            <div class="announcement">
+              <h2>Name 3</h2>
+              <p>Description 3</p>
+            </div>
           </div>
-          <img src="./img/placeholder.svg" alt="pfp" />
-          <div class="user">
-            <h4>nickname 2</h4>
-            <p>user status</p>
-          </div>
-          <img src="./img/placeholder.svg" alt="pfp" />
-          <div class="user">
-            <h4>nickname 3</h4>
-            <p>user status</p>
-          </div>
-          <img src="./img/placeholder.svg" alt="pfp" />
-          <div class="user">
-            <h4>nickname 4</h4>
-            <p>user status</p>
+        </div>
+
+        <div class="trend container">
+          <h3>Trending</h3>
+          <div class="trending-list">
+            <img src="./img/placeholder.svg" alt="pfp" />
+            <div class="trending-user">
+              <h4>nickname 1</h4>
+              <p>trending-user status</p>
+            </div>
+            <img src="./img/placeholder.svg" alt="pfp" />
+            <div class="trending-user">
+              <h4>nickname 2</h4>
+              <p>trending-user status</p>
+            </div>
+            <img src="./img/placeholder.svg" alt="pfp" />
+            <div class="trending-user">
+              <h4>nickname 3</h4>
+              <p>trending-user status</p>
+            </div>
+            <img src="./img/placeholder.svg" alt="pfp" />
+            <div class="trending-user">
+              <h4>nickname 4</h4>
+              <p>trending-user status</p>
+            </div>
           </div>
         </div>
       </div>
