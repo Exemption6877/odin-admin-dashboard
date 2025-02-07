@@ -15,7 +15,7 @@ body {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 3.8fr;
+  grid-template-columns: 2fr 10fr;
   grid-template-rows: 1fr 6fr;
   background-color: var(--bg-color);
 }
@@ -150,8 +150,8 @@ img {
 
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1FR 1FR;
   gap: 2rem;
   margin-left: 2rem;
 }
@@ -169,9 +169,11 @@ img {
 }
 
 .project-card {
-  height: 300px;
+  height: 250px;
   background-color: var(--secondary-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.301);
+  border-radius: 1ch;
+  padding: 1rem;
 }
 
 .project-actions {
@@ -182,32 +184,47 @@ img {
 /* Announcement & trending */
 
 .sidebar-right {
+  display: grid;
   grid-column: 2;
+  grid-template-rows: 1fr 1fr;
   grid-row: span 2;
+  padding-right: 2rem;
 }
 
 .announcement-list {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 0.5fr);
   background-color: var(--secondary-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.301);
+  border-radius: 1ch;
+  padding: 1.5rem;
 }
 
 .trending-list {
   background-color: var(--secondary-color);
   display: grid;
+  grid-template-columns: 0.2fr 1fr;
   grid-template-rows: repeat(4, 1fr);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.301);
   border-radius: 1ch;
+  column-gap: 1rem;
+  padding: 1.5rem;
 }
 
 .trending-user {
   grid-column-start: 2;
-  display: flex;
-  flex-direction: column;
+  gap: 0px;
 }
 
-.trending-user-info {
-  display: flex;
-  flex-direction: column;
+.trending-user > * {
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
+
+.trending-list > img {
+  margin-top: 1rem;
+}
+
+.container > h3 {
+  font-size: 1.5rem;
 }
